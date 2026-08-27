@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment and sensitive variables
+.env
+.env*.local
+*.env
+*.key
+*.pem
+*.jks
+*.keystore
+
+# Expo and EAS build artifacts
+.expo/
+dist/
+web-build/
+*.tsbuildinfo
+
+# Native build folders
+android/
+ios/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db

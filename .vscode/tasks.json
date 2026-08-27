@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Iniciar Expo (Dev)",
+      "type": "shell",
+      "command": "npx expo start -c",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Verificar Tipos (TypeScript)",
+      "type": "shell",
+      "command": "npx tsc --noEmit",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "Gerar APK no EAS",
+      "type": "shell",
+      "command": "cmd /c \"set EAS_NO_VCS=1 && npx eas-cli build -p android --profile preview\"",
+      "problemMatcher": []
+    }
+  ]
+}
